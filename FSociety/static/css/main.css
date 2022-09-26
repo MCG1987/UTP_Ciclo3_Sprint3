@@ -1,0 +1,79 @@
+/* el * es para la generalidad */
+* {
+    margin: 0;
+    background: rgba(3, 3, 3, 0.2) fixed no-repeat 50% 50%;
+    background-color: transparent;
+    background-size: cover;
+    font-size: 27px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    user-select: none; /*no deja que el cliente seleccione nada */
+}
+/* contenedor para edicion general */
+.container {
+    background-color: transparent;
+    background-image: url(/IMAGENES/fondo.png);
+    /* background-image: url_for('static', filename='/IMAGENES/fondo.png'); */
+    /* background-image: url_for('static', filename='/IMAGENES/fondo.png'); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;   
+}
+/* formulario principal y el unico */
+.formulario {
+    width: 400px;
+    height: 42%;
+    padding: 18px;
+    border: 3px white solid;
+    margin: initial;
+    margin-top: 10%;
+    margin-left: 1%;
+    background-color: transparent;
+}
+/* titulo h1 */
+.index_titulo {
+    color:rgba(18, 19, 124, 0.849);
+    font-weight: bold;
+    background-color: transparent; 
+}
+/* titulo del email */
+.index_email {
+    color: black;
+    font-weight: lighter;
+    margin-top: 80px;
+    background-color: transparent;
+}
+/* input del email */
+.input_index_email {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+/* titulo del password */
+.index_password {
+    color: black;
+    font-weight: lighter;
+    background-color: transparent;
+}
+/* input del password */
+.input_index_password {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+/* boton aceptar */
+.index_aceptar {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: grey;
+    margin-left: 32%;
+}
+/* boton Cancelar */
+.index_cancelar {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: grey;
+    margin-left: 30%;
+}

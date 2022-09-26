@@ -1,0 +1,35 @@
+{% extends "layout.html" %} 
+{% block contentent %}
+<body>
+    <div class="container">
+
+        <!--Se crean los botones del formulario-->
+        <form action="action_page.php" method="get" class="formulario">
+            <!--Se coloca el titulo para ingresar al sistema-->
+            <h1 class="index_titulo">Ingreso al sistema</h1>
+            <!--Etiqueta e input para el email-->
+            <label for="email" class="index_email">Ingrese su email</label><br>
+            <input type="text" id="mi_email" name="mi_email" placeholder="email" class="input_index_email">
+            <!-- <img src="/IMAGENES/img_index_email.jpg" alt="" class="index_img_email" > -->
+            <br><br>
+            <!--Etiqueta e input para la contraseña-->
+            <label for="password" class="index_password">Ingrese su contraseña:</label><br>
+            <input type="password" id="mi_password" name="mi_password" placeholder="******"
+                class="input_index_password">
+            <!-- <img src="/IMAGENES/img_password_index.jpg" alt="" class="index_img_password"> -->
+            <!-- <a href="https://www.freepik.es/vector-gratis/dos-llaves-ojo-cerradura_765939.htm#query=llave&position=5&from_view=keyword" class="derechos_llave">Imagen de Freepik</a> -->
+            <br><br>
+            <!--Boton para ir al siguiente formulario-->
+            <div class="container-buttons">
+                <button class="index_aceptar">
+                    <a target="_blank" href="RegistrarUsuario.html"> Aceptar</a>
+                </button><br><br>
+                <!--Pendiente como hacer que se vea como un boton-->
+                <button class="index_cancelar">
+                    <a href="index.html"> Cancelar</a>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+{% endblock %}
