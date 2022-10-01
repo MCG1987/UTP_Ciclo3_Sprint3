@@ -1,0 +1,25 @@
+{% extends "maestra.html" %}
+{% block titulo %}
+Editar producto
+{% endblock %}
+{% block contenido %}
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <h3 class="is-size-3">Editar Item</h3>
+            <form action="{{url_for('actualizar_producto')}}" method="post">
+                {# Enviar el id en un campo oculto #}
+                <input type="hidden" name="id" value="{{producto[0]}}">
+                <label for="nombre">Nombre del Item:</label>
+                <input value="{{producto[1]}}" required type="text" class="input" placeholder="Nombre" name="nombre" id="nombre">
+                <label for="descripcion">Descripción del Item</label>
+                <input value="{{producto[2]}}" required type="text" class="input" placeholder="Descripción" name="descripcion" id="descripcion">
+                <label for="precio">Precio por unidad del Item</label>
+                <input value="{{producto[3]}}" required type="number" class="input" placeholder="Precio" name="precio" id="precio">
+                <button type="submit" class="button is-success mt-2">Guardar cambios</button>
+                <a href="{{url_for('productos')}}" class="button is-primary mt-2">Cancelar cambios</a>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}
